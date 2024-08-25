@@ -30,8 +30,8 @@ App = {
     },
 
     bindEvents: function() {
-        $(document).on('focus', 'input', App.hareKrsna);
         $(document).on('click', '.btn-register', App.getData);
+        $(document).on('focus', 'input', App.hareKrsna);
     },
     hareKrsna: function() {
         web3.eth.getAccounts(function(error,accounts){
@@ -68,7 +68,7 @@ App = {
                 var sellerNum=[];
                 var sellerManager=[];
                 var sellerAddress=[];
-                // console.log(result);
+                console.log(result);
                 
                 for(var k=0;k<result[0].length;k++){
                     sellerId[k]=result[0][k];
